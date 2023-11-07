@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <!-- Andre komponenter eller indhold her -->
+    <music-list></music-list>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MusicList from '@/components/MusicList.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MusicList // Det her er shorthand for MusicList: MusicList
   }
 }
 </script>
