@@ -1,66 +1,65 @@
 [
     {
-      "id": 1,
-      "artist": "The Beatles",
-      "album": "Abbey Road",
-      "year": 1969,
-      "genre": "Rock",
+        "id": 1,
+        "artist": "The Beatles",
+        "album": "Abbey Road",
+        "year": 1969,
+        "genre": "Rock"
     },
     {
-      "id": 2,
-      "artist": "Miles Davis",
-      "album": "Kind of Blue",
-      "year": 1959,
-      "genre": "Jazz",
-    }
+        "id": 2,
+        "artist": "Miles Davis",
+        "album": "Kind of Blue",
+        "year": 1959,
+        "genre": "Jazz"
+    },
     {
         "id": 3,
         "artist": "Hugorm",
         "album": "TRO, HUG OG KÆRLIGHED",
         "year": 2022,
-        "genre": "Rock",
-      }
-      {
+        "genre": "Rock"
+    },
+    {
         "id": 4,
         "artist": "Bo Burnham",
         "album": "INSIDE",
         "year": 2022,
-        "genre": "Komedie",
-      }
-      {
+        "genre": "Komedie"
+    },
+    {
         "id": 5,
         "artist": "Barselona",
         "album": "Væbnet Hjerte",
         "year": 2023,
-        "genre": "Pop",
-      }
-      {
+        "genre": "Pop"
+    },
+    {
         "id": 6,
         "artist": "Simon Kvamm",
         "album": "Vandmand",
         "year": 2017,
-        "genre": "Pop",
-      }
-      {
+        "genre": "Pop"
+    },
+    {
         "id": 7,
         "artist": "The Minds of 99",
         "album": "The Minds of 99",
         "year": 2014,
-        "genre": "Alternativ",
-      }
-      {
+        "genre": "Alternativ"
+    },
+    {
         "id": 8,
         "artist": "Tom Misch",
         "album": "Geography",
         "year": 2018,
-        "genre": "Alternativ",
-      }
-      {
+        "genre": "Alternativ"
+    },
+    {
         "id": 9,
         "artist": "Nephew",
         "album": "USADSB",
         "year": 2004,
-        "genre": "Rock",
-      }
-  ]
-  
+        "genre": "Rock"
+    }
+]
