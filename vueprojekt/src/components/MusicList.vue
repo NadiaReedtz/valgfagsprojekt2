@@ -6,7 +6,7 @@
     <input v-model="search.year" placeholder="Søg efter år">
     <input v-model="search.genre" placeholder="Søg efter genre">
 
-    <ul>
+    <ul v-if="isSearchActive">
       <li v-for="song in filteredMusic" :key="song.id">
         {{ song.artist }} - {{ song.album }} ({{ song.year }}) - {{ song.genre }}
       </li>
@@ -40,11 +40,15 @@ export default {
           (this.search.genre ? song.genre.toLowerCase().includes(this.search.genre.toLowerCase()) : true)
         );
       });
+    },
+    isSearchActive() {
+      // Check if any search field is filled
+      return Object.values(this.search).some(v => v !== '');
     }
   }
 };
 </script>
 
 <style scoped>
-/* Her kan du tilføje CSS for din komponent */
+
 </style>
