@@ -51,59 +51,66 @@ export default {
 };
 </script>
 
-<style scoped>
-.music-list {
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-  color: #121A28;
-  margin-top: 20px;
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Forhindrer scrolling på hele siden */
+  height: 100%; /* Sætter højden på siden til 100% af viewport-højden */
+  background-image: url('~@/assets/61672.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 
 .search-container {
-    display: grid;
-    place-items: center;
-    height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Start alignment i stedet for center */
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 17%; /* Skubber søgeboksen ned fra toppen */
 }
+
 
 .search-box {
-    width: 50%;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Rettet til korrekt CSS-syntaks */
-    border-radius: 10px; 
-    background: #ffffff; /* 'background' er nu stavet korrekt */
+  width: 50%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; 
+  background: #ffffff; 
 }
 
-
 h1 {
-  color: #121A28; 
+  color:  #324ab2;
 }
 
 input[type="text"] {
-  border: 10px solid #bdc3c7;
+  border: 2px solid #bdc3c7;
   border-radius: 6px;
   padding: 10px;
   margin-bottom: 20px;
-  width: 80%; 
+  width: calc(100% - 44px); /* Tilpasser bredden efter padding og border */
 }
 
 ul {
   padding: 0;
   list-style: none;
+  margin: 0; /* Fjerner standardmargen */
 }
 
 li {
-  background-color: #ecf0f1; 
-  padding: 10px; 
+  background-color: #ecf0f1;
+  padding: 10px;
   margin-bottom: 10px;
-  margin-left: 200px;
-  margin-right: 200px;
   border-radius: 4px;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
+  width: calc(100% - 40px); /* Tilpasser bredden til padding */
 }
 
 li:hover {
-  background-color: #d0d3d4; 
+  background-color: #d0d3d4;
 }
+
 </style>
