@@ -1,7 +1,7 @@
 <template>
   <div class="search-container">
   <div class="search-box">
-    <h1>Musikliste</h1>
+    <h1>MUSIKLISTE</h1>
     <input v-model="search.artist" placeholder="Søg efter artist">
     <input v-model="search.album" placeholder="Søg efter album">
     <input v-model="search.year" placeholder="Søg efter år">
@@ -57,10 +57,6 @@ html, body {
   padding: 0;
   overflow: hidden; /* Forhindrer scrolling på hele siden */
   height: 100%; /* Sætter højden på siden til 100% af viewport-højden */
-  background-image: url('~@/assets/61672.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .search-container {
@@ -70,7 +66,7 @@ html, body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  padding-top: 17%; /* Skubber søgeboksen ned fra toppen */
+  padding-top: 12%; /* Skubber søgeboksen ned fra toppen */
 }
 
 
@@ -83,7 +79,7 @@ html, body {
 }
 
 h1 {
-  color:  #324ab2;
+  color:  #202020;
 }
 
 input[type="text"] {
