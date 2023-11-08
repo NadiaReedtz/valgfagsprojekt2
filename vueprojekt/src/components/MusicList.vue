@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="search-container">
+  <div class="search-box">
     <h1>Musikliste</h1>
     <input v-model="search.artist" placeholder="Søg efter artist">
     <input v-model="search.album" placeholder="Søg efter album">
@@ -11,6 +12,7 @@
         {{ song.artist }} - {{ song.album }} ({{ song.year }}) - {{ song.genre }}
       </li>
     </ul>
+  </div>
   </div>
 </template>
 
@@ -50,5 +52,58 @@ export default {
 </script>
 
 <style scoped>
+.music-list {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #121A28;
+  margin-top: 20px;
+}
 
+
+.search-container {
+    display: grid;
+    place-items: center;
+    height: 60vh;
+}
+
+.search-box {
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Rettet til korrekt CSS-syntaks */
+    border-radius: 10px; 
+    background: #ffffff; /* 'background' er nu stavet korrekt */
+}
+
+
+h1 {
+  color: #121A28; 
+}
+
+input[type="text"] {
+  border: 10px solid #bdc3c7;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 80%; 
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  background-color: #ecf0f1; 
+  padding: 10px; 
+  margin-bottom: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; 
+}
+
+li:hover {
+  background-color: #d0d3d4; 
+}
 </style>
